@@ -26,7 +26,9 @@ gulp.task('concat', function() {
             './app/javascript/jquery-3.2.1.min.js',
             //'./app/javascript/01-install.js',
             //'./app/javascript/02-fondamentaux.js'
-            './app/javascript/03-getters-setters.js'
+            //'./app/javascript/03-getters-setters.js'
+            //'./app/javascript/04-add-elem-dom.js'
+            './app/javascript/05-nav.js',
         ])
         .pipe(concat('production.js'))
         .pipe(gulp.dest('./app/js'));
