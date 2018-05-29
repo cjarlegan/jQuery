@@ -740,3 +740,33 @@ body > header span {
 @media all and (min-width: 768px) {
   body > header span {
     display: none; } }
+
+.slider {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  position: relative; }
+  .slider ul {
+    padding-left: 0;
+    width: 9999px;
+    position: relative;
+    margin: 0; }
+  .slider li {
+    list-style: none;
+    float: left; }
+  .slider span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all .2s; }
+  .slider span:hover {
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 1.7rem; }
+  .slider .icon-navigate_before {
+    left: 5%; }
+  .slider .icon-navigate_next {
+    right: 5%; }
