@@ -770,3 +770,73 @@ body > header span {
     left: 5%; }
   .slider .icon-navigate_next {
     right: 5%; }
+
+.galerie figure {
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden; }
+  .galerie figure img {
+    transition: all .3s; }
+  .galerie figure img:hover {
+    cursor: pointer;
+    transform: scale(1.2, 1.2); }
+
+.lightbox {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none; }
+  .lightbox .cadre {
+    width: 90%;
+    background: #fff;
+    border: 1px solid #fff;
+    position: relative; }
+  .lightbox span {
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer; }
+  .lightbox .icon-navigate_before {
+    left: 2%;
+    transform: translateY(-50%); }
+  .lightbox .icon-navigate_next {
+    right: 2%;
+    transform: translateY(-50%); }
+  .lightbox .icon-close {
+    top: 0;
+    right: 0;
+    font-size: 1.5rem; }
+  .lightbox figcaption {
+    padding: 1rem; }
+  .lightbox .list-puces {
+    padding: .3rem;
+    margin: 0 1rem;
+    text-align: center;
+    border-top: 1px solid #d4d2d2; }
+    .lightbox .list-puces li {
+      display: inline-block;
+      list-style: none;
+      margin: .5rem;
+      border: 1px solid #212020;
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      cursor: pointer; }
+    .lightbox .list-puces li:hover,
+    .lightbox .list-puces .puce-active {
+      background: #212020; }
+
+@media all and (min-width: 768px) {
+  .lightbox .cadre {
+    width: 70%; } }
+
+@media all and (min-width: 1200px) {
+  .lightbox .cadre {
+    width: 50%; } }
