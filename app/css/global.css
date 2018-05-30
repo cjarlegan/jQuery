@@ -840,3 +840,32 @@ body > header span {
 @media all and (min-width: 1200px) {
   .lightbox .cadre {
     width: 50%; } }
+
+.accordeon {
+  padding: 2rem 0; }
+  .accordeon h1 {
+    border-radius: 5px;
+    border: 1px solid #bbb8b8;
+    background: #edecec;
+    color: #212020;
+    padding: .6rem .8rem;
+    margin-bottom: 0;
+    font-size: 1.33333rem;
+    font-weight: lighter;
+    cursor: pointer; }
+    .accordeon h1 span {
+      display: inline-block;
+      width: 1rem; }
+  .accordeon p {
+    border: 1px solid #a19f9f;
+    padding: 1rem;
+    color: #212020;
+    margin-bottom: 0;
+    border-radius: 0 0 5px 5px;
+    display: none; }
+    .accordeon p:nth-of-type(1) {
+      display: block; }
+  .accordeon .active {
+    border-radius: 5px 5px 0 0;
+    color: #169A9F;
+    cursor: default; }
