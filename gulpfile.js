@@ -32,6 +32,7 @@ gulp.task('concat', function() {
             './app/javascript/06-slider.js',
             './app/javascript/07-lightbox.js',
             './app/javascript/08-accordeon.js',
+            './app/javascript/09-formulaire.js',
         ])
         .pipe(concat('production.js'))
         .pipe(gulp.dest('./app/js'));
